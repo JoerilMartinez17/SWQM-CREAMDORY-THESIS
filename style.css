@@ -343,22 +343,31 @@ footer {
     width: 40px;
     height: 40px;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .gallery {
   display: flex;
   gap: 20px;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(135deg, #DDDAD0,  #7A7A73);
+  padding: 30px;
+  border-radius: 15px;
+  z-index: 1000;
+  border-bottom: 2px solid #ddd;
 }
 
 .gallery-item {
-  display: block; /* para buong item clickable */
-  cursor: pointer;
+  display: block;
   text-align: center;
-  border-radius: 12px;
-  background: white;
-  padding: 10px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  padding: 5px;
   text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease;
+  color: black;
+  transition: transform .2s;
 }
 
 .gallery-item:hover {
@@ -366,14 +375,23 @@ footer {
 }
 
 .gallery-item img {
-  width: 150px;
+  width: 90px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
 
+/* Section Styles */
 .detail-section {
-  margin-top: 50px;
-  padding: 20px;
+  padding: 30px;
+  margin-top: 40px;
   border-top: 2px solid #ccc;
+  background: #F8F3CE;
+  border-radius: 10px;
 }
-
+.phase-title {
+  text-align: center;
+  font-size: 28px;
+  margin: 20px 0 10px 0;
+  font-weight: bold;
+}
